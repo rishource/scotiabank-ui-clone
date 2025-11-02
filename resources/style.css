@@ -42,13 +42,13 @@ body {
 }
 
 .welcome-block h1 {
-    font-size: 40px;
+    font-size: 48px;
     font-weight: bold;
     margin-bottom: 16px;
 }
 
 .welcome-block p {
-    font-size: 20px;
+    font-size: 18px;
     max-width: 900px;
     margin: 0 auto 24px;
     line-height: 1.4;
@@ -73,12 +73,21 @@ body {
 }
 
 .content {
-    margin: 20px;
-    background: #f7e9d9;
-    height: 600px;
+    background: #fff4e6;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    border: 1px solid #ddd;
 }
 
-/* Responsive Fix */
+.container {
+    margin: 40px 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 @media (min-width: 768px) {
     .header-main {
         justify-content: flex-start;
