@@ -1,212 +1,223 @@
 /* -------- GENERAL RESET -------- */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
-  --brand-red: #d90429;
-  --dark: #111;
-  --text: #333;
-  --muted: #6b7280;
-  --bg: #ffffff;
-  --bg-alt: #f9fafb;
-  --border: #dcdcdc;
-  --radius: 10px;
-  --transition: 0.25s ease;
+    --brand-red: #d90429;
+    --dark: #111;
+    --text: #333;
+    --muted: #6b7280;
+    --bg: #ffffff;
+    --bg-alt: #f9fafb;
+    --border: #dcdcdc;
+    --radius: 10px;
+    --transition: 0.25s ease;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
+    font-family: "Inter", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
 }
 
 /* -------- HEADER -------- */
 .header-main {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  padding: 14px 20px;
-  display: flex;
-  align-items: center;
-  z-index: 100;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
 }
 
 .header-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .header-logo {
-  font-family: "Nunito", sans-serif;
-  font-size: 24px;
-  font-weight: 800;
-  text-decoration: none;
-  color: var(--brand-red);
-  display: flex;
-  align-items: center;
-  gap: 3px;
+    font-family: "Nunito", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--brand-red);
+    display: flex;
+    align-items: center;
+    gap: 3px;
 }
+
 .header-logo .registered {
-  font-size: 14px;
-  color: var(--brand-red);
+    font-size: 14px;
+    color: var(--brand-red);
 }
 
 /* -------- HERO SECTION -------- */
 .welcome-block {
-  background: var(--bg-alt);
-  padding: 90px 20px;
-  text-align: center;
+    background: var(--brand-red);
+    color: var(--bg);
+    padding: 90px 20px;
+    text-align: center;
 }
 
 .welcome-inner h1 {
-  font-size: 42px;
-  font-weight: 800;
-  margin-bottom: 10px;
-  color: var(--dark);
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 10px;
 }
 
 .welcome-inner .lead {
-  font-size: 18px;
-  color: var(--muted);
-  margin-bottom: 20px;
+    font-size: 18px;
+    color: var(--bg-alt);
+    margin-bottom: 20px;
 }
 
 .cta-button {
-  display: inline-block;
-  background: var(--brand-red);
-  border-radius: var(--radius);
-  padding: 13px 26px;
-  font-weight: 600;
-  color: #fff;
-  text-decoration: none;
-  transition: var(--transition);
+    display: inline-block;
+    color: var(--brand-red);
+    background: var(--bg);
+    border-radius: var(--radius);
+    padding: 13px 26px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    border: 1px solid var(--brand-red);
 }
+
 .cta-button:hover {
-  opacity: 0.85;
+    border-color: var(--bg);
+    color: var(--bg);
+    background: var(--brand-red);
 }
 
 /* -------- CARD CONTENT -------- */
 .container {
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 .content {
-  background: var(--bg-alt);
-  padding: 25px;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  transition: var(--transition);
+    background: var(--bg-alt);
+    padding: 25px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    transition: var(--transition);
 }
+
 .content:hover {
-  transform: translateY(-3px);
-  border-color: var(--brand-red);
+    transform: translateY(-3px);
+    border-color: var(--brand-red);
 }
+
 .content-title {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 6px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 6px;
 }
 
 /* -------- REGION LISTING -------- */
 .footer-section {
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 0 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
 }
 
 .footer-section h2 {
-  font-size: 28px;
-  margin-bottom: 25px;
-  font-weight: 800;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 800;
 }
 
 .alpha-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
 }
 
 .alpha-block h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: var(--brand-red);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--brand-red);
 }
 
 .alpha-block ul {
-  list-style: none;
+    list-style: none;
 }
-.alpha-block li + li {
-  margin-top: 6px;
+
+.alpha-block li+li {
+    margin-top: 6px;
 }
+
 .alpha-block a {
-  text-decoration: none;
-  color: var(--text);
-  transition: var(--transition);
+    text-decoration: none;
+    color: var(--text);
+    transition: var(--transition);
 }
+
 .alpha-block a:hover {
-  color: var(--brand-red);
-  text-decoration: underline;
+    color: var(--brand-red);
+    text-decoration: underline;
 }
 
 /* -------- FOOTER -------- */
 .site-footer {
-  background: var(--bg-alt);
-  padding: 40px 20px;
-  margin-top: 60px;
-  border-top: 1px solid var(--border);
+    background: var(--bg-alt);
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top: 1px solid var(--border);
 }
 
 .footer-links,
 .footer-bottom {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-  margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 .footer-links a,
 .footer-bottom a {
-  text-decoration: none;
-  color: var(--text);
-  transition: var(--transition);
-  font-size: 14px;
+    text-decoration: none;
+    color: var(--text);
+    transition: var(--transition);
+    font-size: 14px;
 }
+
 .footer-links a:hover,
 .footer-bottom a:hover {
-  color: var(--brand-red);
+    color: var(--brand-red);
 }
 
 .footer-inner {
-  text-align: center;
-  margin-top: 10px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .muted-note {
-  font-size: 13px;
-  color: var(--muted);
+    font-size: 13px;
+    color: var(--muted);
 }
 
 /* -------- RESPONSIVE -------- */
 @media (max-width: 768px) {
-  .welcome-inner h1 {
-    font-size: 32px;
-  }
+    .welcome-inner h1 {
+        font-size: 32px;
+    }
 }
