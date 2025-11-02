@@ -2,52 +2,160 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scotiabank Global Site | Team Clone Preview</title>
-    <meta name="description"
-        content="Team Rishource internal preview of the Scotiabank global site clone. Real-time UI testing and deployment showcase.">
-    <meta name="author" content="Team Rishource">
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="icon" type="image/png" href="resources/icons/image.png">
-    <link rel="apple-touch-icon" href="resources/icons/image.png">
-    <link rel="shortcut icon" href="resources/icons/favicon.ico" type="image/x-icon">
-    <meta property="og:title" content="Scotiabank Global Site | Team Clone Preview">
-    <meta property="og:description" content="Live deployment of the Scotiabank UI clone project by Team Rishource.">
-    <meta property="og:image" content="https://rishource.github.io/scotiabank-ui-clone/resources/icons/image.png">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rishource.github.io/scotiabank-ui-clone/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Scotiabank Global Site | Team Clone Preview">
-    <meta name="twitter:description" content="Internal Scotiabank UI clone — live deployment for review and testing.">
-    <meta name="twitter:image" content="https://rishource.github.io/scotiabank-ui-clone/resources/icons/image.png">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Banking UI Educational Layout</title>
+
+    <meta name="description" content="Educational front-end UI layout inspired by banking website design principles. For learning only." />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <meta property="og:title" content="Banking UI Demo" />
+    <meta property="og:description" content="Educational front-end banking layout sample." />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/png" href="resources/icons/image.png" />
+    <link rel="apple-touch-icon" href="resources/icons/image.png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="resources/style.css">
 </head>
 
 <body>
 
-    <div class="header-main">
-        <div class="header-logo">
-            <a href="index.html">Scotiabank<span class="registered">&reg;</span></a>
+    <!-- ================= HEADER ================= -->
+    <header class="header-main">
+        <div class="header-inner">
+            <a class="header-logo" href="index.html">
+                <span class="brand-text">Banking UI</span><span class="registered">®</span>
+            </a>
         </div>
-    </div>
+    </header>
 
-    <div class="welcome-block">
-        <h1>Welcome to Scotiabank's global site</h1>
-        <p>We offer personal, business, and commercial banking, wealth management and private banking, corporate and
-            investment banking, and capital markets, through our global team of approximately 90,000 Scotiabankers.</p>
-        <button>Enter Scotiabank Canada</button>
-    </div>
+    <main class="site-main">
 
-    <div class="container">
-        <div class="content"></div>
-        <div class="content"></div>
-        <div class="content"></div>
-    </div>
+        <!-- ================= HERO ================= -->
+        <section class="welcome-block">
+            <div class="welcome-inner">
+                <h1>Welcome</h1>
+                <p class="lead">
+                    This demo shows a global banking homepage layout for practice and study.
+                </p>
+                <a class="cta-button" href="#">Explore Example Region</a>
+            </div>
+        </section>
 
+        <!-- ================= CONTENT CARDS ================= -->
+        <section class="container">
+            <article class="content">
+                <h2 class="content-title">Personal Banking</h2>
+                <p>Retail financial services UI example.</p>
+            </article>
 
-    <footer class="footer-bar">This interface is a learning project. It is not affiliated with or authorized by the original brand.</footer>
+            <article class="content">
+                <h2 class="content-title">Business Banking</h2>
+                <p>Interface example for business and corporate banking.</p>
+            </article>
+
+            <article class="content">
+                <h2 class="content-title">Wealth Management</h2>
+                <p>Investment and planning interface section.</p>
+            </article>
+        </section>
+
+        <!-- ================= REGION LISTING ================= -->
+        <section class="footer-section">
+            <h2>International Regions</h2>
+
+            <div class="alpha-grid">
+
+                <div class="alpha-block">
+                    <h3>A–D</h3>
+                    <ul>
+                        <li><a href="#">Australia</a></li>
+                        <li><a href="#">Bahamas</a></li>
+                        <li><a href="#">Barbados</a></li>
+                        <li><a href="#">Brazil</a></li>
+                        <li><a href="#">Canada</a></li>
+                        <li><a href="#">Chile</a></li>
+                        <li><a href="#">Colombia</a></li>
+                        <li><a href="#">Costa Rica</a></li>
+                        <li><a href="#">Dominican Republic</a></li>
+                    </ul>
+                </div>
+
+                <div class="alpha-block">
+                    <h3>E–H</h3>
+                    <ul>
+                        <li><a href="#">Hong Kong SAR</a></li>
+                    </ul>
+                </div>
+
+                <div class="alpha-block">
+                    <h3>I–L</h3>
+                    <ul>
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">Ireland</a></li>
+                        <li><a href="#">Japan</a></li>
+                    </ul>
+                </div>
+
+                <div class="alpha-block">
+                    <h3>M–P</h3>
+                    <ul>
+                        <li><a href="#">Malaysia</a></li>
+                        <li><a href="#">Mexico</a></li>
+                        <li><a href="#">Panama</a></li>
+                        <li><a href="#">Peru</a></li>
+                    </ul>
+                </div>
+
+                <div class="alpha-block">
+                    <h3>Q–T</h3>
+                    <ul>
+                        <li><a href="#">Singapore</a></li>
+                        <li><a href="#">Trinidad & Tobago</a></li>
+                    </ul>
+                </div>
+
+                <div class="alpha-block">
+                    <h3>U–Z</h3>
+                    <ul>
+                        <li><a href="#">United Kingdom</a></li>
+                        <li><a href="#">United States</a></li>
+                        <li><a href="#">Uruguay</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+
+        <div class="footer-links">
+            <a href="#">Corporate</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Markets</a>
+            <a href="#">Wealth Services</a>
+            <a href="#">Newcomer Banking</a>
+        </div>
+
+        <div class="footer-bottom">
+            <a href="#">Back to top</a>
+            <a href="#">Français</a>
+            <a href="#">Español</a>
+            <a href="#">Legal</a>
+            <a href="#">Privacy</a>
+            <a href="#">Security</a>
+        </div>
+
+        <div class="footer-inner muted-note">
+            <small>© Educational UI Layout</small>
+        </div>
+    </footer>
+
 </body>
-
 </html>
