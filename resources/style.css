@@ -1,0 +1,86 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 95px;
+    padding: 0 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.header-logo a {
+    text-decoration: none;
+    font-size: 56px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    color: #EC111A;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 0;
+}
+
+.registered {
+    font-size: 18px;
+    line-height: 0;
+}
+
+.welcome-block {
+    padding: 76px 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #EC111A;
+}
+
+.welcome-block h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.welcome-block p {
+    font-size: 20px;
+    max-width: 900px;
+    margin: 0 auto 24px;
+    line-height: 1.4;
+}
+
+.welcome-block button {
+    font-size: 20px;
+    padding: 14px 32px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    background: #fff;
+    border-style: solid;
+    border-color: #EC111A;
+    transition: 0.2s;
+}
+
+.welcome-block button:hover {
+    background-color: #EC111A;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.content {
+    margin: 20px;
+    background: #f7e9d9;
+    height: 600px;
+}
+
+/* Responsive Fix */
+@media (min-width: 768px) {
+    .header-main {
+        justify-content: flex-start;
+    }
+}
